@@ -1,7 +1,270 @@
+
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="陈惊蛰的个人博客-寻找那一片在我梦里的干净天空" />
+    <meta name="keywords" content="CRBlog,陈惊蛰" />
+    <title>LINQ中的哲学与薛定谔的猫 - 无限城</title>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/blog.css" rel="stylesheet">
+</head>
+<body id="top">
+
+    <div class="blog-masthead">
+        <div class="container-fluid">
+            <nav class="blog-nav">
+                
+    <a class="blog-nav-item" href="/">无限城</a>
+    <a class="blog-nav-item active" href="/">文章</a>
+
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9 blog-main">
+                
+<div class="blog-post">
+    <h2 class="blog-post-title">LINQ中的哲学与薛定谔的猫</h2>
+    <div class="blog-post-meta">
+        <time>
+            2015年03月19日 17:53
+        </time>
+        <span style="float: right">浏览(90)</span>
+    </div>
+    <div class="blog-main">
+            <h5>今天想到一个有意思的东西。</h5>
+
+<pre><code>List&lt;int&gt; a = new List&lt;int&gt;();
+Console.WriteLine(a.All(n =&gt; n &gt; 10));//true
+Console.WriteLine(a.All(n =&gt; n &lt; 10));//true
+</code></pre>
+
+<h5>然而，众所周知的是，bool的默认值是false的。</h5>
+
+<h5>看来是作者故意想告诉我们：未来还未确定，all() == true。</h5>
+
+    </div>
+    <div class="footer">
+                <span class="label label-primary" style="margin-right: 4px">
+                    哲学
+                </span>
+    </div>
+</div>
+
+<!--评论-->
+    <div><i class="glyphicon glyphicon-comment"></i> 1 条评论</div>
+    <div class="list-group">
+            <div class="list-group-item">
+                <div class="row">
+                    <div class="col-lg-2 text-center">
+                        <img src="https://secure.gravatar.com/avatar/4f857c0574a7a634ec8d9a823aef1d46.png?s=60&amp;d=mm&amp;r=g" alt="大肥爪" title="大肥爪" class="img-circle" />
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="list-group-item-heading">
+                            <strong>大肥爪 </strong>
+                            <label style="float: right">2015-03-19 20:53</label>
+                        </div>
+                        <div class="list-group-item-text blog-comment">
+                            未来还未确定，一切皆能成真
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<a name="add_comment"></a>
+<div>
+    <form id="formCmt" action="/cmt/linq-zhexue" method="post" role="form">
+        <input id="_tick" type="hidden" name="tick" value="3d575f0069e9720f50440600" />
+        <input id="_hash" type="hidden" name="hash" value="" />
+        <div id="group-nickname" class="form-group">
+            <input id="f-nickname" class="form-control" type="text" name="NickName" placeholder="昵称" value="" required />
+        </div>
+        <div id="group-email" class="form-group">
+            <input id="f-email" class="form-control" type="email" name="Email" placeholder="邮箱，用于获取(Gavatar)" value="" required/>
+        </div>
+        
+        <div id="group-content" class="form-group">
+            <textarea id="f-content" class="form-control" rows="5" name="Content" placeholder="评论" required></textarea>
+        </div>
+        <p>
+            <input type="button" class="btn btn-primary" onclick="beforeSubmit();" value="提交评论" />
+        </p><p id="warning" class="text-danger"></p>
+    </form>
+</div>
+
+
+            </div><!-- /.blog-main -->
+
+            <div class="col-sm-2 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                    <div class="text-center">
+    <img src="/images/SoWhat.jpg" class="img-circle" style="margin: 8px" alt="陈惊蛰像" />
+
+    <h4 class="text-center">
+        <a href="http://weibo.com/crazer">@陈惊蛰</a>
+    </h4>
+    <div>
+        ポケモンGETだぜ！
+    </div>
+</div>
+                </div>
+                <div class="sidebar-module">
+                    <h4><strong>标签云</strong></h4>
+                    <ol class="list-unstyled">
+                                <li>
+                                    <a href="/tag/you-xi-kai-fa" class="btn btn-xs">
+                                        <span class="label label-primary">
+                                            游戏开发
+                                            <span class="badge">9</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tag/step-by-step-da-jian-fu-wu-qi" class="btn btn-xs">
+                                        <span class="label label-success">
+                                            Step By Step 搭建服务器
+                                            <span class="badge">5</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tag/zhe-xue" class="btn btn-xs">
+                                        <span class="label label-info">
+                                            哲学
+                                            <span class="badge">3</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tag/lao-sao" class="btn btn-xs">
+                                        <span class="label label-warning">
+                                            牢骚
+                                            <span class="badge">1</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tag/bian-cheng-ji-qiao" class="btn btn-xs">
+                                        <span class="label label-danger">
+                                            编程技巧
+                                            <span class="badge">1</span>
+                                        </span>
+                                    </a>
+                                </li>
+
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+                    <h4><strong>最近的文章</strong></h4>
+                    <ol class="list-unstyled">
+                            <li>
+                                <a href="/2015/04/step-by-step-5" class="tag">Step By Step创建你自己的游戏服务器（五）游戏服务器</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/step-by-step-4" class="tag">Step By Step创建你自己的游戏服务器（四）服务器间通信</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/step-by-step-3" class="tag">Step By Step创建你自己的游戏服务器（三）网关服务器</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/enlightenment-from-devil" class="tag">来自渗透者的蛊惑</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/step-by-step-2-login-server" class="tag">Step By Step创建你自己的游戏服务器（二）登录服务器与Nancy</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/step-by-step-1" class="tag">Step By Step创建你自己的游戏服务器（一）基本设计</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/humanhaving" class="tag">人类不平等的基础以及抄捷径的方式</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/server-db-optimization" class="tag">游戏服务器数据库写入优化</a>
+                            </li>
+                            <li>
+                                <a href="/2015/04/server-robot" class="tag">机器人压测带来的疑难杂症</a>
+                            </li>
+                            <li>
+                                <a href="/2015/03/markdown-img" class="tag">markdown发图片的技巧</a>
+                            </li>
+                    </ol>
+                </div>
+                <div class="sidebar-module">
+    <h4><strong>我喜欢的网站</strong></h4>
+    <ol class="list-unstyled">
+        <li><a href="http://www.cnblogs.com/" target="_blank">博客园</a></li>
+        <li><a href="http://www.unitymanual.com/" target="_blank">游戏蛮牛</a></li>
+        <li><a href="http://www.hujiang.com/" target="_blank">沪江</a></li>
+    </ol>
+</div>
+            </div><!-- /.blog-sidebar -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    <!-- Footer -->
+    <footer class="blog-footer">
+	<p><img src="/images/favicon.ico" /></p>
+        <p>Power by C.R. &copy; 2015.</p>
+        <p>
+            <a href="#">返回顶部</a>
+        </p>
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <!-- for Highlight.js support -->
+    <link href="/highlight/vs.css" rel="stylesheet" />
+    <script src="/highlight/highlight.pack.js"></script>
+    <!--<script>hljs.initHighlightingOnLoad();</script> -->
+    <script type="text/javascript">
+        //$('pre code').each(function (i, e) { hljs.highlightBlock(e) });
+        setTimeout(function () {
+            $.post("/spam/hash/" + $("#_tick").val(), function(data) {
+                $("#_hash").val(data);
+                $("input[type=submit]").removeAttr("disabled");
+            });
+        }, 2000);
+        function beforeSubmit() {
+            //var g1 = $("#form-nickname").removeClass("has-error");
+            //$("#form-email").removeClass("has-error");
+            //$("#form-content").removeClass("has-error");
+            var can = true;
+            var nickname = $("#f-nickname").val();
+            if (nickname === null || nickname === "" || nickname === " ") {
+                $("#group-nickname").addClass("has-error");
+                can = false;
+            }
+            var email = $("#f-email").val();
+            if (email === null || email === "" || email === " ") {
+                $("#group-email").addClass("has-error");
+                can = false;
+            }
+            var content = $("#f-content").val();
+            if (content ===null || content === "" || content === " ") {
+                $("#group-content").addClass("has-error");
+                can = false;
+            }
+
+            if (can) {
+                $("#formCmt").submit();
+            } else {
+                $("#warning").text("请填写必须的字段！");
+            }
+        }
+
+        //$(function () {
+            $('img').each(function (i, e) {
+                var item = $(e);
+                if (!item.hasClass('img-circle')) {
+                    item.addClass('img-thumbnail');
+                }
+            });
+        //});
+    </script>
+
 </body>
 </html>
