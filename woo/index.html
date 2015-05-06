@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>RoyNet</title>
+    <title>Woo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,26 +11,33 @@
 </head>
 <body>
 <section class="page-header">
-    <h1 class="project-name">RoyNet</h1>
-    <h2 class="project-tagline">一个简单的游戏服务器</h2>
+    <h1 class="project-name">Woo</h1>
+    <h2 class="project-tagline">一个博客网站的静态页面生成器</h2>
 </section>
 <section class="main-content">
     
             <div>
-                <p>RoyNet是一个简单的游戏服务器。</p>
+                <p>这是一个由WPF编写的静态页面生成器。</p>
 
-<p>最终目的是能够运行一个简单的MMORPG游戏。你可以通过地址来获取它的源码。</p>
+<p>模版使用的是cshtml，当然你可以无视这个后缀使用单纯的文本文件，但你需要知道的是，它使用的是Razor语法，所以在编写模版的时候，请使用@Model来插入数据。</p>
 
-<p>主要使用到的类库有：</p>
+<p>目前是博客专用。Model提供了如下的属性：</p>
 
 <ul>
-<li><a href="http://docs.supersocket.net/">SuperSocket</a></li>
-<li><a href="https://github.com/zeromq/netmq">NetMQ</a></li>
-<li><a href="http://nancyfx.org/">NancyFx</a></li>
-<li><a href="https://github.com/mgravell/protobuf-net">ProtoBuf-net</a></li>
+<li>Title</li>
+<li>Content</li>
+<li>Link</li>
+<li>Author</li>
+<li>Description</li>
 </ul>
 
-<p>现阶段基本什么都做不了，完善中。</p>
+<p>编辑界面使用的是Markdown语法，在右边会生成一个预览界面。</p>
+
+<p>不过预览界面是不包含模板中的CSS的。</p>
+
+<p>本博客就是使用该工具生成。</p>
+
+<p>你可以通过<a href="https://github.com/Roytin/Woo">这个地址</a>获得最新的代码。</p>
 
             </div>
 
@@ -38,7 +45,7 @@
 <br/>
 <div class="main-content">
     <p>
-        <div class="ds-thread" data-thread-key="roynet-1" data-title="index" data-url="http://ifchen.com/roynet/"></div>
+        <div class="ds-thread" data-thread-key="roynet-2" data-title="index" data-url="http://ifchen.com/woo/"></div>
     </p>
 </div>
 <section class="main-content">
